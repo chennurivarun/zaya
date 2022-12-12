@@ -1,5 +1,5 @@
 from brain.brain import replaybrain
-from body.listen import MicExcecution
+from body.listen import MicExecution
 print(">> starting zaya : wait for some time. ")
 from body.speak import Speak
 from features.clap import Tester
@@ -13,7 +13,7 @@ def mainExecution():
 
     while True:
 
-        data = MicExcecution()  
+        data = MicExecution()  
         Data = str(data)
         Replay = replaybrain(Data)
         Speak(Replay)
@@ -27,7 +27,7 @@ def clapdetect():
         mainExecution()
     else:
         pass
-    
+
 
 clapdetect()
 
